@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Cocina from "./Cocina";
+import Cocina from "./cocina";
 import { socket } from "./socket";
 
 const productos = [
