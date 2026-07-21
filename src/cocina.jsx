@@ -8,7 +8,7 @@ function Cocina() {
     const recibirPedido = (pedido) => {
       setPedidos((actuales) => [...actuales, pedido]);
 
-      const audio = new Audio("/campana_fuerte.wav");
+      const audio = new Audio("/campana.wav");
 audio.volume = 1;
 audio.currentTime = 0;
 
