@@ -1,5 +1,5 @@
 import { io } from "socket.io-client";
 
-const servidor = `http://${window.location.hostname}:3001`;
+const socket = io();
 
-export const socket = io(servidor);
+export { socket };
