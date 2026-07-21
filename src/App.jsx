@@ -165,13 +165,13 @@ socket.emit("nuevoPedido", pedidoNuevo);
     <div
       style={{
         minHeight: "100vh",
-        backgroundColor: "#171717",
+        backgroundColor: "#050505",
         color: "white",
         padding: "20px",
         fontFamily: "Arial, sans-serif",
       }}
     >
-      <h1 style={{ textAlign: "center", fontSize: "48px" }}>
+      <h1 style={{ textAlign: "center", fontSize: "48px", backgroundColor: "#fcf6f6" }}>
         Asados Christi
       </h1>
 
