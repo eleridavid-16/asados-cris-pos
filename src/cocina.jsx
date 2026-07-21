@@ -45,6 +45,7 @@ return () => {
           textAlign: "center",
           fontSize: "24px",
           marginTop: 0,
+          color: "white"
         }}
       >
         Cocina — Asados Christi
