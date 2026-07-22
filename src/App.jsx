@@ -573,8 +573,8 @@ function App() {
       )}
 
       {vista === "pedidos" && (
-        <div>
-          <h2>Pedidos enviados</h2>
+        <div >
+          <h2 style={{color: "white",}} >Pedidos enviados</h2>
 
           {pedidos.length === 0 ? (
             <p>No hay pedidos enviados.</p>
