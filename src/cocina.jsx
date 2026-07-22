@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { socket } from "./socket";
-import hero from "./assets/logo_res.png";
+import logo_res from "./assets/logo_res.png";
 
 function Cocina() {
   const [pedidos, setPedidos] = useState([]);
@@ -45,7 +45,7 @@ return () => {
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
       ),
-      url(${hero})
+      url(${logo_res})
     `,
         backgroundSize: "cover",
         backgroundPosition: "center",
