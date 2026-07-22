@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { socket } from "./socket";
+import hero from "./assets/hero.png";
 
 function Cocina() {
   const [pedidos, setPedidos] = useState([]);
@@ -38,32 +39,55 @@ return () => {
         color: "white",
         padding: "20px",
         fontFamily: "Arial",
+        minHeight: "100vh",
+        backgroundImage: `
+      linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+      ),
+      url(${hero})
+    `,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        color: "white",
+        padding: "20px",
+        fontFamily: "Arial",
       }}
     >
-      <h1
+      <div
         style={{
-          textAlign: "center",
-          fontSize: "24px",
-          marginTop: 0,
-          color: "white"
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "15px",
         }}
       >
-        Cocina — Asados Christi
-      </h1>
+        <h1
+          style={{
+            textAlign: "center",
+            fontSize: "24px",
+            marginTop: 0,
+            color: "white",
+          }}
+        >
+          COCINA — ASADOS CHRYSTI
+        </h1>
+      </div>
 
       {pedidos.length === 0 ? (
         <h2 style={{ textAlign: "center", color: "#aaa" }}>
           Esperando pedidos...
         </h2>
       ) : (
-     <div
-  style={{
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fill, 240px)",
-    gap: "14px",
-    justifyContent: "start",
-  }}
->
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill, 240px)",
+            gap: "14px",
+            justifyContent: "start",
+          }}
+        >
           {pedidos.map((pedido) => (
             <div
               key={pedido.numero}
@@ -76,15 +100,15 @@ return () => {
               }}
             >
               <div
-  style={{
-    textAlign: "center",
-    fontSize: "28px",
-    fontWeight: "bold",
-    marginBottom: "10px",
-  }}
->
-  #{String(pedido.numero).padStart(3, "0")}
-</div>
+                style={{
+                  textAlign: "center",
+                  fontSize: "28px",
+                  fontWeight: "bold",
+                  marginBottom: "10px",
+                }}
+              >
+                #{String(pedido.numero).padStart(3, "0")}
+              </div>
 
               <hr />
 
