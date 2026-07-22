@@ -637,6 +637,7 @@ function App() {
             style={{
               textAlign: "center",
               marginBottom: "30px",
+              color: "white",
             }}
           >
             Reporte Diario de Ventas
