@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { socket } from "./socket";
-import hero from "./assets/hero.png";
+import hero from "./assets/logo_res.png";
 
 function Cocina() {
   const [pedidos, setPedidos] = useState([]);
